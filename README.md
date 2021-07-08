@@ -1,6 +1,7 @@
 # Titanic-ML
 
-This a simple ML model using date frames from 
+This a ML model that predicts passenger's survival rate
+Trained and tested with the data from 
 
 ## Tech Stack
 ```
