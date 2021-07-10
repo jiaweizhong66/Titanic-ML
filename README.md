@@ -13,3 +13,6 @@ Frameworks: Pandas, Numpy, scikit-Learn
 
 ## Age and Fare value normalized on a scale of {0,1}
 ![Screen Shot 2021-07-08 at 10 56 39 AM](https://user-images.githubusercontent.com/66694451/124944342-3bdb6d00-dfdb-11eb-8612-c6fdf3afcc83.png)
+
+
+## Linear Regression using Gradient Descent
