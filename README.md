@@ -1,6 +1,6 @@
 # Titanic-ML
 
-This a ML model that predicts passenger's survival rate
+This a ML model that predicts passenger's survival rate given the information of age, fare paid.
 Trained and tested with the data from [here](https://www.kaggle.com/c/titanic/data)
 
 ## Tech Stack
@@ -17,5 +17,8 @@ Frameworks: Pandas, Numpy, scikit-Learn
 ### Age and Fare value normalized on a scale of {0,1}
 ![Screen Shot 2021-07-08 at 10 56 39 AM](https://user-images.githubusercontent.com/66694451/124944342-3bdb6d00-dfdb-11eb-8612-c6fdf3afcc83.png)
 
+### selected train and test date set at a ratio of 8:2
+![Screen Shot 2021-07-10 at 3 14 10 PM](https://user-images.githubusercontent.com/66694451/125174182-8272c800-e191-11eb-85e0-9f4c475be2df.png)
+![Screen Shot 2021-07-10 at 3 14 15 PM](https://user-images.githubusercontent.com/66694451/125174183-843c8b80-e191-11eb-8711-33992f4d8ad3.png)
 
 ### Linear Regression using Gradient Descent
