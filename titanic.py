@@ -49,7 +49,7 @@ df.dropna(inplace=True)
 
 # split the data into trainning and test parts
 x_train,x_test,y_train,y_test = train_test_split(df[['Age_Normalized','Sex_Category','Fare_Normalized']],df['Survived'],
-test_size=0.1)
+test_size=0.2)
 
 print(x_train)
 print(y_train)
