@@ -1,6 +1,6 @@
 # Titanic-ML
 
-This a ML model that predicts passenger's survival rate given the information of age, fare paid or sex.
+This a ML model that predicts passenger's survival rate given the information of age, fare paid or gender.
 Trained and tested with the data from [here](https://www.kaggle.com/c/titanic/data)
 
 ## Tech Stack
