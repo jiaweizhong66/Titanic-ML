@@ -21,4 +21,7 @@ Frameworks: Pandas, Numpy, scikit-Learn
 ![Screen Shot 2021-07-10 at 3 14 10 PM](https://user-images.githubusercontent.com/66694451/125174182-8272c800-e191-11eb-85e0-9f4c475be2df.png)
 ![Screen Shot 2021-07-10 at 3 14 15 PM](https://user-images.githubusercontent.com/66694451/125174183-843c8b80-e191-11eb-8711-33992f4d8ad3.png)
 
-### Linear Regression using Gradient Descent
+### Logistic Linear Regression using Gradient Descent, achieved an accuracy of 78%
+![Screen Shot 2021-07-10 at 3 15 18 PM](https://user-images.githubusercontent.com/66694451/125174213-b221d000-e191-11eb-8dad-8b022c77fa94.png)
+
+
