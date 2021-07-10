@@ -1,6 +1,12 @@
 import pandas as pd
 import numpy as np
 from sklearn import preprocessing
+from sklearn.linear_model import LinearRegression, LogisticRegression 
+from sklearn.metrics import classification_report, mean_squared_error,r2_score
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler 
+import matplotlib.pyplot as plt
+import seaborn as sb
 
 df = pd.read_csv("./train.csv")#reading in data from the csv file
 df.head()
@@ -34,3 +40,26 @@ fare = df['Fare'].values.reshape(-1,1) #returns a numpy array
 min_max_scaler = preprocessing.MinMaxScaler()
 fare_scaled = min_max_scaler.fit_transform(fare)
 df['Fare_Normalized'] = fare_scaled
+
+#check null values
+df.isnull().sum()
+
+# dropping null value
+df.dropna(inplace=True)
+
+# split the data into trainning and test parts
+x_train,x_test,y_train,y_test = train_test_split(df[['Age_Normalized','Sex_Category','Fare_Normalized']],df['Survived'],
+test_size=0.1)
+
+print(x_train)
+print(y_train)
+
+# initialize ML model
+log_reg = LogisticRegression()
+log_reg.fit(x_train,y_train)
+
+# Making prediction
+survive_predictions = log_reg.predict(x_test)]
+
+# reports
+print(classification_report(y_test,survive_predictions))
