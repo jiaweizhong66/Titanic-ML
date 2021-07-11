@@ -35,55 +35,30 @@ sb.countplot(x="Age",data=df_train,hue="Survived")
 plt.figure(figsize=(20,10))
 sb.heatmap(df_train.corr())
 
-# What is the most frequently occuring age for male and female? 
-is_f = df['Sex'] == 'female'
-df_f = df[is_f]
-df_f['Age'].value_counts()
+# create new features
+df_train[['male','female']] = pd.get_dummies(df_train['Sex'])
+df_train[['C','Q','S']] = pd.get_dummies(df_train['Embarked'])
+df_train.head()
 
-is_m = df['Sex'] == 'male'
-df_m = df[is_m]
-df_m['Age'].value_counts()
+# fill the null value
+df_train.fillna(method="backfill",inplace=True)
 
-# Convert the 'Sex' feature of the Train dataset into categorical feature.
-sex_category = []
-for sex in df['Sex']:
-  if sex == "female":
-    sex_category.append(1)
-  else:
-    sex_category.append(0)
-df['Sex_Category'] = sex_category
+#Drop the irrelevant features
+drop_features = ['PassengerId', 'Name', 'Titles', 'Ticket','Name','Cabin','Embarked','Sex']
+df_train.drop(drop_features,inplace=True,axis=1)
 
+df_train.head()
 
-# Normalize 'Age' and 'Fare' to scale{0,1}
-x = df['Age'].values.reshape(-1,1) #returns a numpy array
-min_max_scaler = preprocessing.MinMaxScaler()
-x_scaled = min_max_scaler.fit_transform(x)
-df['Age_Normalized'] = x_scaled
+# split the trainning and testing data
+x_train, x_test, y_train, y_test = train_test_split(df_train.loc[:, df_train.columns != 'Survived'],df_train.Survived,\
+test_size=0.1)
 
-fare = df['Fare'].values.reshape(-1,1) #returns a numpy array
-min_max_scaler = preprocessing.MinMaxScaler()
-fare_scaled = min_max_scaler.fit_transform(fare)
-df['Fare_Normalized'] = fare_scaled
+# initialize the linear regression algorithm
+titanic_model_v1 = LogisticRegression()
+titanic_model_v1.fit(x_train,y_train)
 
-#check null values
-df.isnull().sum()
+# making predictions
+y_predictions = titanic_model_v1.predict(x_test)
 
-# dropping null value
-df.dropna(inplace=True)
-
-# split the data into trainning and test parts
-x_train,x_test,y_train,y_test = train_test_split(df[['Age_Normalized','Sex_Category','Fare_Normalized']],df['Survived'],
-test_size=0.2)
-
-print(x_train)
-print(y_train)
-
-# initialize ML model
-log_reg = LogisticRegression()
-log_reg.fit(x_train,y_train)
-
-# Making prediction
-survive_predictions = log_reg.predict(x_test)]
-
-# reports
-print(classification_report(y_test,survive_predictions))
+# print reports
+print(classification_report(y_test_2,y_predictions))
