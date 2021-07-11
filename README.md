@@ -12,7 +12,7 @@ Frameworks: Pandas, Numpy, scikit-Learn
 ### Data frame looks like 
 ![Screen Shot 2021-07-10 at 1 08 05 PM](https://user-images.githubusercontent.com/66694451/125171020-f5734300-e17f-11eb-8065-ccf9ca10acf8.png)
 
-### visualize the ratio between survived and not survived
+### Visualize the ratio between survived and not survived
 ![Screen Shot 2021-07-11 at 4 28 35 PM](https://user-images.githubusercontent.com/66694451/125209167-0d70c280-e265-11eb-934a-31d705e643db.png)
 
 ### Checking the "Sex" feature and the corresponding Survival rate
