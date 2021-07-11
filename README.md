@@ -8,6 +8,7 @@ Trained and tested with the data from [Kaggle](https://www.kaggle.com/c/titanic/
 Language: Python
 Frameworks: Pandas, Numpy, scikit-Learn
 ```
+
 ## Data Analysis
 ### Data frame looks like 
 ![Screen Shot 2021-07-10 at 1 08 05 PM](https://user-images.githubusercontent.com/66694451/125171020-f5734300-e17f-11eb-8065-ccf9ca10acf8.png)
@@ -43,7 +44,7 @@ We found that as people pay more money, the survival rate tends to be higher
 ### Filled the null value with method of backfill and drop the irrelevent features
 ![Screen Shot 2021-07-11 at 6 34 47 PM](https://user-images.githubusercontent.com/66694451/125211768-b1169e80-e276-11eb-9129-36c454a22c78.png)
 
-### Classification report(86% accuracy)
+## Classification report(86% accuracy)
 ![Screen Shot 2021-07-11 at 6 40 14 PM](https://user-images.githubusercontent.com/66694451/125211851-7bbe8080-e277-11eb-86f7-ce1a35a1ee29.png)
 
 
