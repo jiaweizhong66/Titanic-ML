@@ -17,6 +17,12 @@ Frameworks: Pandas, Numpy, scikit-Learn
 ### Checking the "Sex" feature and the corresponding Survival rate
 ![Screen Shot 2021-07-11 at 4 29 18 PM](https://user-images.githubusercontent.com/66694451/125209176-27aaa080-e265-11eb-9100-44fe1ca15a8a.png)
 
+### relationship between Pclass and survival rate.
+![Screen Shot 2021-07-11 at 4 30 57 PM](https://user-images.githubusercontent.com/66694451/125209268-a1db2500-e265-11eb-9aed-7e2400f2ac1e.png)
+We found that as people pay more money, the survival rate tends to be higher
+![Screen Shot 2021-07-11 at 4 31 34 PM](https://user-images.githubusercontent.com/66694451/125209279-b6b7b880-e265-11eb-994e-754923fd6b42.png)
+
+
 ### Create a new column and have the entry as 1 wherever the column "Sex" shows "female" and 0 wherever it shows "male"
 ![Screen Shot 2021-07-08 at 10 54 50 AM](https://user-images.githubusercontent.com/66694451/124943962-f0c15a00-dfda-11eb-92f2-a5b2356bbd39.png)
 
