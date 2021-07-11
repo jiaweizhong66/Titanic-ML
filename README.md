@@ -23,6 +23,11 @@ Frameworks: Pandas, Numpy, scikit-Learn
 
 We found that as people pay more money, the survival rate tends to be higher
 
+### Conclusion on analysis:
+- "Sex" is one of the main predictor
+- "Pclass" is one of the main predictor (the higher the Pclass, the higher the survival rate)
+- Male with Pclass 3 has the least survival rate
+- "Age" is not a effective predictor
 
 ### Create a new column and have the entry as 1 wherever the column "Sex" shows "female" and 0 wherever it shows "male"
 ![Screen Shot 2021-07-08 at 10 54 50 AM](https://user-images.githubusercontent.com/66694451/124943962-f0c15a00-dfda-11eb-92f2-a5b2356bbd39.png)
