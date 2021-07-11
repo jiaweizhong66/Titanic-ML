@@ -19,8 +19,9 @@ Frameworks: Pandas, Numpy, scikit-Learn
 
 ### relationship between Pclass and survival rate.
 ![Screen Shot 2021-07-11 at 4 30 57 PM](https://user-images.githubusercontent.com/66694451/125209268-a1db2500-e265-11eb-9aed-7e2400f2ac1e.png)
-We found that as people pay more money, the survival rate tends to be higher
 ![Screen Shot 2021-07-11 at 4 31 34 PM](https://user-images.githubusercontent.com/66694451/125209279-b6b7b880-e265-11eb-994e-754923fd6b42.png)
+
+We found that as people pay more money, the survival rate tends to be higher
 
 
 ### Create a new column and have the entry as 1 wherever the column "Sex" shows "female" and 0 wherever it shows "male"
