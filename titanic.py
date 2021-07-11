@@ -13,6 +13,14 @@ df = pd.read_csv("./train.csv")#reading in data from the csv file
 # show dataframe
 df.head()
 
+# Checking the ratio 
+sb.countplot(data=df_train,x="Survived",hue="Survived")
+plt.title("Ratio of the classes")
+
+#Checking the "Sex" feature and the corresponding Survival rate
+sb.countplot(x="Sex",data=df_train,hue="Survived")
+
+
 # What is the most frequently occuring age for male and female? 
 is_f = df['Sex'] == 'female'
 df_f = df[is_f]
