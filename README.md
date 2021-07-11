@@ -1,7 +1,7 @@
 # Titanic-ML
 
 This is an analysis of titanic survivor data and a ML model that predicts passenger's survival rate with logistic linear regression.
-Trained and tested with the data from [here](https://www.kaggle.com/c/titanic/data)
+Trained and tested with the data from [Kaggle](https://www.kaggle.com/c/titanic/data)
 
 ## Tech Stack
 ```
