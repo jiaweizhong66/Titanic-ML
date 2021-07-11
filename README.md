@@ -8,6 +8,7 @@ Trained and tested with the data from [here](https://www.kaggle.com/c/titanic/da
 Language: Python
 Frameworks: Pandas, Numpy, scikit-Learn
 ```
+## Data Analysis
 ### Data frame looks like 
 ![Screen Shot 2021-07-10 at 1 08 05 PM](https://user-images.githubusercontent.com/66694451/125171020-f5734300-e17f-11eb-8065-ccf9ca10acf8.png)
 
@@ -33,6 +34,8 @@ We found that as people pay more money, the survival rate tends to be higher
 - "Pclass" is one of the main predictor (the higher the Pclass, the higher the survival rate)
 - Male with Pclass 3 has the least survival rate
 - "Age" is not a effective predictor
+
+## Feature engineering:
 
 ### Create a new column and have the entry as 1 wherever the column "Sex" shows "female" and 0 wherever it shows "male"
 ![Screen Shot 2021-07-08 at 10 54 50 AM](https://user-images.githubusercontent.com/66694451/124943962-f0c15a00-dfda-11eb-92f2-a5b2356bbd39.png)
