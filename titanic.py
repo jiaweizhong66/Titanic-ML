@@ -20,6 +20,11 @@ plt.title("Ratio of the classes")
 #Checking the "Sex" feature and the corresponding Survival rate
 sb.countplot(x="Sex",data=df_train,hue="Survived")
 
+#Checking the "Pclass" feature and the corresponding Survival rate
+sb.countplot(x="Pclass",data=df_train,hue="Survived")
+
+#What is Pclass?
+df_train.groupby(by = "Pclass")['Fare'].mean()
 
 # What is the most frequently occuring age for male and female? 
 is_f = df['Sex'] == 'female'
