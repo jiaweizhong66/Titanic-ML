@@ -9,6 +9,8 @@ import matplotlib.pyplot as plt
 import seaborn as sb
 
 df = pd.read_csv("./train.csv")#reading in data from the csv file
+
+# show dataframe
 df.head()
 
 # What is the most frequently occuring age for male and female? 
