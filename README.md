@@ -25,6 +25,9 @@ We found that as people pay more money, the survival rate tends to be higher
 ### relationship between age and survival rate
 ![Screen Shot 2021-07-11 at 4 41 48 PM](https://user-images.githubusercontent.com/66694451/125209463-e87d4f00-e266-11eb-9f22-278a3bbbf5cb.png)
 
+### heatmap
+![Screen Shot 2021-07-11 at 4 44 27 PM](https://user-images.githubusercontent.com/66694451/125209523-4f026d00-e267-11eb-84ac-07ec7bc65712.png)
+
 ### Conclusion on analysis:
 - "Sex" is one of the main predictor
 - "Pclass" is one of the main predictor (the higher the Pclass, the higher the survival rate)
