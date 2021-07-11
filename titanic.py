@@ -7,6 +7,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler 
 import matplotlib.pyplot as plt
 import seaborn as sb
+from collection import counter
 
 df = pd.read_csv("./train.csv")#reading in data from the csv file
 
