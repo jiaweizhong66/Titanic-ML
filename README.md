@@ -5,7 +5,7 @@ Trained and tested with the data from [Kaggle](https://www.kaggle.com/c/titanic/
 
 ## Tech Stack
 ```
-Language: Python
+Language/Tool: Python, Google Colab
 Frameworks: Pandas, Numpy, scikit-Learn
 ```
 
